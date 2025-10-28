@@ -48,23 +48,23 @@ export default defineConfig({
       '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
     },
   },
-  build: {
-    target: 'esnext',
-    outDir: 'build',
-    chunkSizeWarningLimit: 1000, // slightly higher threshold
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // Split out heavy libraries into their own chunks
-          react: ['react', 'react-dom'],
-          radix: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-tooltip'],
-          charts: ['recharts'],
-          ui: ['sonner', 'lucide-react', 'class-variance-authority'],
-          forms: ['react-hook-form', 'react-day-picker'],
-        },
+ build: {
+  target: 'esnext',
+  outDir: 'dist', // ← change this line
+  chunkSizeWarningLimit: 1000,
+  rollupOptions: {
+    output: {
+      manualChunks: {
+        react: ['react', 'react-dom'],
+        radix: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-tooltip'],
+        charts: ['recharts'],
+        ui: ['sonner', 'lucide-react', 'class-variance-authority'],
+        forms: ['react-hook-form', 'react-day-picker'],
       },
     },
   },
+},
+
   server: {
     port: 3000,
     open: true,
