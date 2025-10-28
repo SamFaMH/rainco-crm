@@ -47,7 +47,7 @@ const mockUsers: UserRole[] = [
 ];
 
 export default function SettingsPage() {
-  const [apiKey, setApiKey] = useState('sk_live_5jg8k3h9d7f6a2s1q4w8e7r5t3y2u9i0');
+  const [apiKey, setApiKey] = useState('');
   const [showApiKey, setShowApiKey] = useState(false);
   const [emailNotifications, setEmailNotifications] = useState(true);
   const [pushNotifications, setPushNotifications] = useState(true);
