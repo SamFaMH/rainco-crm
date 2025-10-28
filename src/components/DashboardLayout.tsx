@@ -68,7 +68,7 @@ export default function DashboardLayout({
               {/* Replace this div with your logo image */}
               <div className="flex items-center justify-center">
                 <img 
-                  src="/src/images/logo.png" 
+                  src="/logo.png" 
                   alt="Rainco CRM Logo" 
                   className=" object-contain" 
                   onError={(e) => {

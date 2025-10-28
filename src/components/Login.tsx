@@ -49,7 +49,7 @@ export default function Login({ onLogin }: LoginProps) {
     <div
       className="min-h-screen flex items-center justify-center p-4 relative"
       style={{
-        backgroundImage: 'url("/src/images/bg.jpg")',
+        backgroundImage: 'url("/bg.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
